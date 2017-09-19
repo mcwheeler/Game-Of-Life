@@ -17,6 +17,9 @@
 		8C1058C61F719A4F00E14F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1058C41F719A4F00E14F38 /* LaunchScreen.storyboard */; };
 		8C1058D11F719A4F00E14F38 /* GameoflifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1058D01F719A4F00E14F38 /* GameoflifeTests.swift */; };
 		8C1058DC1F719A5000E14F38 /* GameoflifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1058DB1F719A5000E14F38 /* GameoflifeUITests.swift */; };
+		8C1058EA1F719B5C00E14F38 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1058E91F719B5C00E14F38 /* MSButtonNode.swift */; };
+		8C1058EC1F71A46C00E14F38 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1058EB1F71A46C00E14F38 /* Grid.swift */; };
+		8C1058EE1F71A5F000E14F38 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1058ED1F71A5F000E14F38 /* Creature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		8C1058D71F719A4F00E14F38 /* GameoflifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameoflifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1058DB1F719A5000E14F38 /* GameoflifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameoflifeUITests.swift; sourceTree = "<group>"; };
 		8C1058DD1F719A5000E14F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1058E91F719B5C00E14F38 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		8C1058EB1F71A46C00E14F38 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		8C1058ED1F71A5F000E14F38 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,11 @@
 		8C1058B41F719A4E00E14F38 /* Gameoflife */ = {
 			isa = PBXGroup;
 			children = (
+				8C1058E91F719B5C00E14F38 /* MSButtonNode.swift */,
 				8C1058B51F719A4E00E14F38 /* AppDelegate.swift */,
 				8C1058B71F719A4E00E14F38 /* GameScene.sks */,
+				8C1058EB1F71A46C00E14F38 /* Grid.swift */,
+				8C1058ED1F71A5F000E14F38 /* Creature.swift */,
 				8C1058B91F719A4E00E14F38 /* Actions.sks */,
 				8C1058BB1F719A4E00E14F38 /* GameScene.swift */,
 				8C1058BD1F719A4E00E14F38 /* GameViewController.swift */,
@@ -202,6 +211,7 @@
 				TargetAttributes = {
 					8C1058B11F719A4D00E14F38 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MGGCVHP874;
 						ProvisioningStyle = Automatic;
 					};
 					8C1058CB1F719A4F00E14F38 = {
@@ -272,7 +282,10 @@
 			files = (
 				8C1058BC1F719A4E00E14F38 /* GameScene.swift in Sources */,
 				8C1058BE1F719A4E00E14F38 /* GameViewController.swift in Sources */,
+				8C1058EE1F71A5F000E14F38 /* Creature.swift in Sources */,
 				8C1058B61F719A4E00E14F38 /* AppDelegate.swift in Sources */,
+				8C1058EC1F71A46C00E14F38 /* Grid.swift in Sources */,
+				8C1058EA1F719B5C00E14F38 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGGCVHP874;
 				INFOPLIST_FILE = Gameoflife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solidconsultants.Gameoflife;
@@ -436,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGGCVHP874;
 				INFOPLIST_FILE = Gameoflife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solidconsultants.Gameoflife;
